@@ -26,15 +26,12 @@ body {
   border: 2px dashed red;
 }
 
-/* .container {
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+.container {
+  max-width: 70%;
+  margin: 10px 10px;
 }
 
-[class*="col"] {
+/* [class*="col"] {
   padding-left: 1rem;
   padding-right: 1rem;
 }
