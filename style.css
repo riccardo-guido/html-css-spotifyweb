@@ -88,6 +88,9 @@ body {
 #sidebar .nav .link img {
   width: 30px;
 }
+#sidebar .nav .link-text {
+  display: none;
+}
 #sidebar .user {
   margin-top: auto;
 }
@@ -117,6 +120,17 @@ body {
   }
   #sidebar .logo-contracted {
     display: none;
+  }
+  #sidebar .nav .link-text {
+    display: block;
+  }
+  #sidebar .nav .link {
+    display: flex;
+    align-items: center;
+  }
+  #sidebar .nav a {
+    text-decoration: none;
+    color: inherit;
   }
 }
 
