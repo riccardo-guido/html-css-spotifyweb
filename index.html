@@ -15,21 +15,36 @@
     <div id="wrapper" class="">
       <div id="top-content" class="">
         <div id="sidebar">
-          <div class="container">
-            <img src="./img/logo.svg" alt="" />
-          </div>
-          <div class="container">
+          <figure class="logo">
+            <img class="logo-extended" src="./img/logo.svg" alt="" />
+            <img class="logo-contracted" src="./img/logo-small.svg" alt="" />
+          </figure>
+          <div class="nav">
             <ul>
-              <li><a href="#"></a><i class="fa-solid fa-house"></i> Home</li>
-              <li>
-                <a href="#"></a>
-                <i class="fa-solid fa-magnifying-glass"></i> Cerca
+              <li class="link-item">
+                <a href="#" class="link">
+                  <img src="./img/home.svg" alt="" />
+                  <span class="link-text">Home</span></a
+                >
               </li>
-              <li>
-                <a href="#"></a> <i class="fa-solid fa-bars"></i> Libreria
+              <li class="link-item">
+                <a href="#" class="link">
+                  <img src="./img/search.svg" alt="" />
+                  <span class="link-text">Cerca</span></a
+                >
+              </li>
+              <li class="link-item">
+                <a href="#" class="link">
+                  <img src="./img/libreria.svg" alt="" />
+                  <span class="link-text">Libreria</span></a
+                >
               </li>
             </ul>
           </div>
+          <div class="playlists">
+            <div class="playlist-title">Playlist</div>
+          </div>
+          <div class="user"></div>
         </div>
         <div id="main-content">
           <header id="main-content-header">
