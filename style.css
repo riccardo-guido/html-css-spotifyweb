@@ -34,25 +34,36 @@ a {
   text-decoration: none;
   color: inherit;
 }
-
-/* .container {
+/* 
+.container {
   max-width: 70%;
   margin: 10px 10px;
 } */
-
-/* [class*="col"] {
+*/ [class*="col"] {
   padding-left: 1rem;
   padding-right: 1rem;
 }
+.row {
+  display: flex;
+}
 .col {
   width: 100%;
+}
+.col-2-3 {
+  width: 70%;
 }
 .col-1-2 {
   width: 50%;
 }
 .col-1-3 {
   width: calc(100% / 3);
-} */
+}
+.col-1-4 {
+  width: 25%;
+}
+.col-1-5 {
+  width: 20%;
+}
 
 /* LAYOUT */
 
@@ -144,6 +155,42 @@ a {
   display: none;
 }
 
+/* PLAYER */
+#player .player-container {
+  display: flex;
+  padding: 20px 10px;
+}
+#player .col-2-3 img {
+  width: 25px;
+  height: 25px;
+}
+#player .song {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+#player .song-button {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+}
+
+#player .control {
+  justify-self: center;
+}
+#player .control-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+#player .separator {
+  border: 1px solid grey;
+}
+
+/* MAIN */
+
 #main-content {
   width: calc(100% - var(--sidebar-width));
   overflow: hidden;
@@ -195,6 +242,13 @@ a {
   }
   #sidebar .separator {
     display: block;
+  }
+  #player .col-2-3 img {
+    width: 40px;
+  }
+  #player .song-button {
+    display: block;
+    margin: auto;
   }
 }
 
