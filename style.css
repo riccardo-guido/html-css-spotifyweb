@@ -255,7 +255,9 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 0.5rem;
+  gap: 1rem;
+  margin: 1rem;
+  color: grey;
 }
 
 #content .recently-played {
@@ -263,6 +265,8 @@ a {
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
+  width: 100%;
+  margin: 1rem;
 }
 
 #content .make-for {
@@ -270,12 +274,16 @@ a {
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
+  width: 100%;
+  margin: 1rem;
 }
 #content .artists {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
+  width: 100%;
+  margin: 1rem;
 }
 
 #content .song {
@@ -287,6 +295,15 @@ a {
 #content .song img {
   width: 100%;
   border-radius: 8px;
+}
+
+#content h3 {
+  margin: 1rem;
+}
+
+#content h6 {
+  color: grey;
+  margin: 1rem;
 }
 
 /* MEDIA QUERY SMALL */
@@ -340,7 +357,12 @@ a {
     --sidebar-width: 300px;
   }
   #content .song {
-    min-width: 150px;
+    width: calc(25% - 20px);
+    min-width: unset;
+  }
+  #content .make-for,
+  #content .artists {
+    justify-content: flex-start;
   }
 }
 
@@ -349,11 +371,28 @@ a {
   :root {
     --sidebar-width: 300px;
   }
+  #content .make-for,
+  #content .artists {
+    justify-content: flex-start;
+  }
 }
 
 /* MEDIA QUERY XLARGE */
 @media screen and (min-width: 1200px) {
   :root {
     --sidebar-width: 300px;
+  }
+  #content .song {
+    width: calc(16% - 20px);
+    /* min-width: 180px;
+    text-align: center; */
+  }
+  #content .recently-played {
+    justify-content: flex-start;
+  }
+
+  #content .make-for,
+  #content .artists {
+    justify-content: flex-start;
   }
 }
