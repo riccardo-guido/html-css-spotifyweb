@@ -242,11 +242,51 @@ a {
   font-family: "montserrat";
 }
 
+/*  CONTENT */
+
 #content {
   height: calc(
     100vh - var(--player-height) - var(--main-content-header-height)
   );
   overflow: auto;
+}
+
+#content .category {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+#content .recently-played {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+#content .make-for {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+#content .artists {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+#content .song {
+  width: calc(33.33% - 20px);
+  min-width: 180px;
+  text-align: center;
+}
+
+#content .song img {
+  width: 100%;
+  border-radius: 8px;
 }
 
 /* MEDIA QUERY SMALL */
@@ -298,6 +338,9 @@ a {
 @media screen and (min-width: 768px) {
   :root {
     --sidebar-width: 300px;
+  }
+  #content .song {
+    min-width: 150px;
   }
 }
 
