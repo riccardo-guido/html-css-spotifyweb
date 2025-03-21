@@ -174,7 +174,8 @@ a {
 #player .song-button {
   display: flex;
   flex-direction: column;
-  margin: 5px;
+  gap: 0.5rem;
+  margin: 0 10px;
 }
 
 #player .control {
@@ -182,11 +183,36 @@ a {
 }
 #player .control-buttons {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+}
+#player .song-point {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 #player .separator {
   border: 1px solid grey;
+  border-radius: 20px;
+  width: 200px;
+}
+#player .song-bar {
+  border: 2px solid white;
+  width: 50px;
+}
+#player .app-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+#player .volume {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
 }
 
 /* MAIN */
