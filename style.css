@@ -221,9 +221,25 @@ a {
   width: calc(100% - var(--sidebar-width));
   overflow: hidden;
 }
+
+/* HEADER */
+
 #main-content-header {
   height: var(--main-content-header-height);
   background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#main-content-header button {
+  background-color: black;
+  color: white;
+  height: 35px;
+  width: 190px;
+  border: 1px solid white;
+  border-radius: 20px;
+  font-family: "montserrat";
 }
 
 #content {
